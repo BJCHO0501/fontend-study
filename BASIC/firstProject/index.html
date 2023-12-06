@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="alert-box" id="myAlert">
+        <div id="alert-content">Alert 박스</div>
+        <button id="close-button">닫기</button>
+    </div>
+
+    <button id="show-button" style="margin-top: 10px;"> 보기 </button>
+    
+    <script>
+        const closeButton = document.getElementById('close-button')
+        const showButton = document.getElementById('show-button')
+
+        function displayAlert(id, status, content) {
+            document.getElementById(id).style.display = status;
+            document.getElementById('alert-content').innerHTML = content
+        }
+
+        showButton.addEventListener('click', () => {
+            displayAlert('myAlert', 'block', "보여주기!");
+        });
+
+        closeButton.addEventListener('click', () => {
+            displayAlert('myAlert', 'none', "힝 안보여줌");
+        });
+
+    </script>
+</body>
+</html>
