@@ -1,0 +1,25 @@
+.top-header {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.todo-cell {
+  margin: 10px 0 0 0;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.todo-submit-button {
+  background-color: lightgray;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 5px;
+  height: 20px;
+}
+
+.todo-list {
+  padding: 10px 0 0 0;
+}
