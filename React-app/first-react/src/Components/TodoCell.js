@@ -1,9 +1,6 @@
 import React from 'react'
 
-export const TodoCell = ({
-    title,
-    date
-}) => {
+const TodoCell = ({ title, date }) => {
   return (
     <div className='todo-cell'>
         <div style={{padding:"20px 0 10px 15px"}} >{title}</div>
@@ -11,3 +8,5 @@ export const TodoCell = ({
     </div>
   )
 }
+
+export default TodoCell
